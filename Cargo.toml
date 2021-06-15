@@ -1,0 +1,18 @@
+[package]
+name = "auth-handlers"
+version = "0.1.0"
+authors = ["Brandon Blaylock <brandon@null.pub>"]
+edition = "2018"
+
+[dependencies]
+tokio = { version = "1.0", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+graphql_client = "0.9"
+reqwest = { version = "0.11", features = ["json"] }
+dropshot = "0.5.1"
+dropshot_endpoint = "0.5.1"
+schemars = "0.8"
+bcrypt = "0.8"
+http = "0.2"
+anyhow = "1.0"
+async-trait = "0.1.50"

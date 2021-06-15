@@ -1,0 +1,11 @@
+query GetUserQuery($username: String!) {
+  users(where: {username: {_eq: $username}}) {
+    email
+    username
+    password_hash
+    roles {
+      role
+    }
+  }
+}
+
